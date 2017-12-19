@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int cntchar(char* x,char y,int z){
+ int i;
+ 
+ while(*x){
+  if(*x==y) i++;
+  x++;
+  } 
+
+ return (z==i);
+}
+
+int main(void){
+ char ar[100];
+ char ch;
+ int i;
+
+ scanf("%s",ar);
+ scanf("%c",&ch);
+ scanf("%d",&i);
+ i=cntchar(ar,ch,i);
+
+ printf("%d",i);
+
+ return 0;
+}
+ 

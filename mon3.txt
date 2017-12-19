@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+typedef struct numInfo{
+ int mul;
+ int qut;
+ int res;
+}numInfo;
+
+void mqr(int n1,int n2,numInfo* x){
+ x->mul=n1*n2;
+ x->qut=n1/n2;
+ x->res=n1%n2;
+}
+
+
+int main(void){
+ numInfo a;
+ int n1,n2;
+
+ scanf("%d",&n1);
+ scanf("%d",&n2);
+ 
+ mqr(n1,n2,&a);
+
+ printf("%d\n%d\n%d",a.mul,a.qut,a.res);
+
+ return 0;
+}
+ 
